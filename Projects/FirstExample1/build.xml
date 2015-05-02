@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run" name="Academy ANT 1">
+	<target name="run" depends="compile">
+	<java classname="org.mycompany.test.Principal">
+		<classpath path="staging" />
+	 </java>
+	</target>
+	<target name="compile">
+		<javac includeantruntime="false" srcdir="./src" destdir="staging" />
+	</target>
+</project> 
